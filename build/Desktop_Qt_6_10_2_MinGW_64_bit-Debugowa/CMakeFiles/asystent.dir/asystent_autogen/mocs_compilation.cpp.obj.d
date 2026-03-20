@@ -1,7 +1,7 @@
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj: \
- C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp \
- C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/kanie/Desktop/ai/asystent/mainwindow.h \
+ C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp \
+ C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/kanie/Documents/GitHub/asystent/mainwindow.h \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

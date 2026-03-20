@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/kanie/Desktop/ai/asystent
+# Install script for directory: C:/Users/kanie/Documents/GitHub/asystent
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/asystent.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/asystent.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -62,6 +62,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

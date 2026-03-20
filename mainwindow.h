@@ -20,6 +20,7 @@ public:
 private slots:
     void on_btnAnalizuj_clicked();
     void on_btnSzukajNewsow_clicked();
+    void on_btnPokazWykres_clicked();
 
 private:
     Ui::MainWindow *ui;

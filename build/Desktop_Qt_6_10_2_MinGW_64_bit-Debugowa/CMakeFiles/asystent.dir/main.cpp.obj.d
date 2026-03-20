@@ -1,6 +1,6 @@
 CMakeFiles/asystent.dir/main.cpp.obj: \
- C:\Users\kanie\Desktop\ai\asystent\main.cpp \
- C:\Users\kanie\Desktop\ai\asystent\mainwindow.h \
+ C:\Users\kanie\Documents\GitHub\asystent\main.cpp \
+ C:\Users\kanie\Documents\GitHub\asystent\mainwindow.h \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.10.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

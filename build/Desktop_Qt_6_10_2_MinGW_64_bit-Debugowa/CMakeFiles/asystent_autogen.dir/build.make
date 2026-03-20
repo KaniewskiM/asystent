@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\kanie\Desktop\ai\asystent
+CMAKE_SOURCE_DIR = C:\Users\kanie\Documents\GitHub\asystent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
+CMAKE_BINARY_DIR = C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
 
 # Utility rule file for asystent_autogen.
 
@@ -70,9 +70,9 @@ CMakeFiles/asystent_autogen: asystent_autogen/timestamp
 asystent_autogen/timestamp: C:/Qt/6.10.2/mingw_64/bin/moc.exe
 asystent_autogen/timestamp: C:/Qt/6.10.2/mingw_64/bin/uic.exe
 asystent_autogen/timestamp: CMakeFiles/asystent_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target asystent"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/CMakeFiles/asystent_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target asystent"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/CMakeFiles/asystent_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/timestamp
 
 asystent_autogen: CMakeFiles/asystent_autogen
 asystent_autogen: asystent_autogen/timestamp
@@ -88,6 +88,6 @@ CMakeFiles/asystent_autogen.dir/clean:
 .PHONY : CMakeFiles/asystent_autogen.dir/clean
 
 CMakeFiles/asystent_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/asystent_autogen.dir/depend
 

@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\kanie\Desktop\ai\asystent
+CMAKE_SOURCE_DIR = C:\Users\kanie\Documents\GitHub\asystent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
+CMAKE_BINARY_DIR = C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
 
 # Include any dependencies generated for this target.
 include CMakeFiles/asystent.dir/depend.make
@@ -71,54 +71,54 @@ include CMakeFiles/asystent.dir/flags.make
 asystent_autogen/timestamp: C:/Qt/6.10.2/mingw_64/bin/moc.exe
 asystent_autogen/timestamp: C:/Qt/6.10.2/mingw_64/bin/uic.exe
 asystent_autogen/timestamp: CMakeFiles/asystent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target asystent"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/CMakeFiles/asystent_autogen.dir/AutogenInfo.json Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target asystent"
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/CMakeFiles/asystent_autogen.dir/AutogenInfo.json Debug
+	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/timestamp
 
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj: CMakeFiles/asystent.dir/flags.make
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj: CMakeFiles/asystent.dir/includes_CXX.rsp
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj: asystent_autogen/mocs_compilation.cpp
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj: CMakeFiles/asystent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.obj -c C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.obj -c C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp
 
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp > CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp > CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp -o CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\asystent_autogen\mocs_compilation.cpp -o CMakeFiles\asystent.dir\asystent_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/asystent.dir/main.cpp.obj: CMakeFiles/asystent.dir/flags.make
 CMakeFiles/asystent.dir/main.cpp.obj: CMakeFiles/asystent.dir/includes_CXX.rsp
-CMakeFiles/asystent.dir/main.cpp.obj: C:/Users/kanie/Desktop/ai/asystent/main.cpp
+CMakeFiles/asystent.dir/main.cpp.obj: C:/Users/kanie/Documents/GitHub/asystent/main.cpp
 CMakeFiles/asystent.dir/main.cpp.obj: CMakeFiles/asystent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/asystent.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/main.cpp.obj -MF CMakeFiles\asystent.dir\main.cpp.obj.d -o CMakeFiles\asystent.dir\main.cpp.obj -c C:\Users\kanie\Desktop\ai\asystent\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/asystent.dir/main.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/main.cpp.obj -MF CMakeFiles\asystent.dir\main.cpp.obj.d -o CMakeFiles\asystent.dir\main.cpp.obj -c C:\Users\kanie\Documents\GitHub\asystent\main.cpp
 
 CMakeFiles/asystent.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/asystent.dir/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Desktop\ai\asystent\main.cpp > CMakeFiles\asystent.dir\main.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Documents\GitHub\asystent\main.cpp > CMakeFiles\asystent.dir\main.cpp.i
 
 CMakeFiles/asystent.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/asystent.dir/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Desktop\ai\asystent\main.cpp -o CMakeFiles\asystent.dir\main.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Documents\GitHub\asystent\main.cpp -o CMakeFiles\asystent.dir\main.cpp.s
 
 CMakeFiles/asystent.dir/mainwindow.cpp.obj: CMakeFiles/asystent.dir/flags.make
 CMakeFiles/asystent.dir/mainwindow.cpp.obj: CMakeFiles/asystent.dir/includes_CXX.rsp
-CMakeFiles/asystent.dir/mainwindow.cpp.obj: C:/Users/kanie/Desktop/ai/asystent/mainwindow.cpp
+CMakeFiles/asystent.dir/mainwindow.cpp.obj: C:/Users/kanie/Documents/GitHub/asystent/mainwindow.cpp
 CMakeFiles/asystent.dir/mainwindow.cpp.obj: CMakeFiles/asystent.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/asystent.dir/mainwindow.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/mainwindow.cpp.obj -MF CMakeFiles\asystent.dir\mainwindow.cpp.obj.d -o CMakeFiles\asystent.dir\mainwindow.cpp.obj -c C:\Users\kanie\Desktop\ai\asystent\mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/asystent.dir/mainwindow.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/asystent.dir/mainwindow.cpp.obj -MF CMakeFiles\asystent.dir\mainwindow.cpp.obj.d -o CMakeFiles\asystent.dir\mainwindow.cpp.obj -c C:\Users\kanie\Documents\GitHub\asystent\mainwindow.cpp
 
 CMakeFiles/asystent.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/asystent.dir/mainwindow.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Desktop\ai\asystent\mainwindow.cpp > CMakeFiles\asystent.dir\mainwindow.cpp.i
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kanie\Documents\GitHub\asystent\mainwindow.cpp > CMakeFiles\asystent.dir\mainwindow.cpp.i
 
 CMakeFiles/asystent.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/asystent.dir/mainwindow.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Desktop\ai\asystent\mainwindow.cpp -o CMakeFiles\asystent.dir\mainwindow.cpp.s
+	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kanie\Documents\GitHub\asystent\mainwindow.cpp -o CMakeFiles\asystent.dir\mainwindow.cpp.s
 
 # Object files for target asystent
 asystent_OBJECTS = \
@@ -141,7 +141,7 @@ asystent.exe: C:/Qt/6.10.2/mingw_64/lib/libQt6EntryPoint.a
 asystent.exe: CMakeFiles/asystent.dir/linkLibs.rsp
 asystent.exe: CMakeFiles/asystent.dir/objects1.rsp
 asystent.exe: CMakeFiles/asystent.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable asystent.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable asystent.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\asystent.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/asystent.dir/clean:
 .PHONY : CMakeFiles/asystent.dir/clean
 
 CMakeFiles/asystent.dir/depend: asystent_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/asystent.dir/depend
 

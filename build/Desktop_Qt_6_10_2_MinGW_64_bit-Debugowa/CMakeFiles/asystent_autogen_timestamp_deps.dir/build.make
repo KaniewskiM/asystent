@@ -52,10 +52,10 @@ RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\kanie\Desktop\ai\asystent
+CMAKE_SOURCE_DIR = C:\Users\kanie\Documents\GitHub\asystent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
+CMAKE_BINARY_DIR = C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa
 
 # Utility rule file for asystent_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/asystent_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/asystent_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/asystent_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Desktop\ai\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa C:\Users\kanie\Documents\GitHub\asystent\build\Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa\CMakeFiles\asystent_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/asystent_autogen_timestamp_deps.dir/depend
 

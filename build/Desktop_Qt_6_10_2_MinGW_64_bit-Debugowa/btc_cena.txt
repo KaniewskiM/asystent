@@ -1,1 +1,1 @@
-{"symbol":"BTCUSDT","price":"71492.92000000"}
+{"symbol":"BTCUSDT","price":"71404.67000000"}

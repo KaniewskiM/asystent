@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "asystent_autogen/timestamp" "custom" "asystent_autogen/deps"
-  "C:/Users/kanie/Desktop/ai/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/mocs_compilation.cpp" "CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj.d"
-  "C:/Users/kanie/Desktop/ai/asystent/main.cpp" "CMakeFiles/asystent.dir/main.cpp.obj" "gcc" "CMakeFiles/asystent.dir/main.cpp.obj.d"
-  "C:/Users/kanie/Desktop/ai/asystent/mainwindow.cpp" "CMakeFiles/asystent.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/asystent.dir/mainwindow.cpp.obj.d"
+  "C:/Users/kanie/Documents/GitHub/asystent/build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/asystent_autogen/mocs_compilation.cpp" "CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/asystent.dir/asystent_autogen/mocs_compilation.cpp.obj.d"
+  "C:/Users/kanie/Documents/GitHub/asystent/main.cpp" "CMakeFiles/asystent.dir/main.cpp.obj" "gcc" "CMakeFiles/asystent.dir/main.cpp.obj.d"
+  "C:/Users/kanie/Documents/GitHub/asystent/mainwindow.cpp" "CMakeFiles/asystent.dir/mainwindow.cpp.obj" "gcc" "CMakeFiles/asystent.dir/mainwindow.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
