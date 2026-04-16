@@ -27,4 +27,4 @@ doxygen Doxyfile
 Wymagane jest utworzenie pliku `api_key.txt` w głównym katalogu i wklejenie tam swojego klucza Gemini API. Dla lokalnej analizy wymagane jest uruchomienie serwera Ollama.
 
 ---
-*Projekt stworzony w celach edukacyjnych i analitycznych.*
+*Maksym Kaniewski FH TEAM*

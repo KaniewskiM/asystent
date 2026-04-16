@@ -58,6 +58,7 @@ public:
      * @param outputFile Względna ścieżka do docelowego pliku TXT dla danych z giełdy.
      * @return Informacja true/false dotycząca powodzenia zapisu na dysku.
      */
+    bool fetchCandles(const std::string& symbol, const std::string& interval, long long startMs, long long endMs, const std::string& outputFile);
 
 private:
     std::string extractJsonValue(const std::string& json, const std::string& key);

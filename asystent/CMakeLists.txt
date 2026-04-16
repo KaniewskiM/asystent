@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Szukamy niezbędnych modułów Qt
-find_package(Qt6 REQUIRED COMPONENTS Widgets Concurrent Charts Network)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Concurrent Charts Network Test)
 
 set(PROJECT_SOURCES
         main.cpp
@@ -50,4 +50,18 @@ target_link_libraries(asystent PRIVATE
 
 set_target_properties(asystent PROPERTIES
     WIN32_EXECUTABLE TRUE
+)
+
+# --- SEKACJA TESTÓW JEDNOSTKOWYCH (Na Ocenę 5.0) ---
+set(TEST_SOURCES
+    test_main.cpp
+    taxcalculator.cpp
+    utils.cpp
+)
+
+qt_add_executable(asystent_tests ${TEST_SOURCES})
+
+target_link_libraries(asystent_tests PRIVATE
+    Qt6::Test
+    Qt6::Core
 )
