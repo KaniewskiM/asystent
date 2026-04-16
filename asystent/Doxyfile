@@ -1,0 +1,17 @@
+# Doxyfile for Krypto Asystent
+PROJECT_NAME           = "Krypto Asystent"
+PROJECT_NUMBER         = 1.0
+OUTPUT_DIRECTORY       = doc
+CREATE_SUBDIRECTORY    = YES
+OUTPUT_LANGUAGE        = Polish
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+RECURSIVE              = YES
+GENERATE_LATEX         = NO
+GENERATE_HTML          = YES
+HAVE_DOT               = YES
+UML_LOOK               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_PATH               = 

@@ -1,0 +1,35 @@
+# Qt / C++ / MinGW build folders
+build/
+bin/
+obj/
+*.a
+*.o
+*.obj
+*.exe
+*.dll
+
+# Qt Creator specific
+*.user
+.qtcreator/
+CMakeLists.txt.user
+
+# Project secrets (VERY IMPORTANT)
+api_key.txt
+
+# Temporary / Generated files
+doc/
+html/
+latex/
+wykres.html
+hist.txt
+supply_*.txt
+newsrss_*.txt
+*.txt.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS specific
+.DS_Store
+Thumbs.db
