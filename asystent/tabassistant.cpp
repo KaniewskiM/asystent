@@ -59,8 +59,11 @@ void TabAssistant::handleAnalysis()
             // =========================================================
             // ZWYKŁA KONWERSACJA (BEZ POBIERANIA CENY Z GIEŁDY)
             // =========================================================
-            QMetaObject::invokeMethod(mainWindow, [this]() {
-                ui->textWynikAI->setPlainText("Trwa myślenie nad odpowiedzią...");
+            LLMClient llm;
+            string mAktualny = uzyjGemini ? ("Google (" + llm.getGeminiModelName() + ")") : ("Lokalna Sztuczna Inteligencja (" + llm.getLlamaModelName() + ")");
+
+            QMetaObject::invokeMethod(mainWindow, [this, mAktualny]() {
+                ui->textWynikAI->setPlainText(QString::fromStdString("Model " + mAktualny + " analizuje bazę wiedzy i redaguje dla Ciebie odpowiedź..."));
             });
 
             string promptKoncowy = "Jesteś przyjaznym edukatorem z dziedziny kryptowalut, technologii blockchain i rynków finansowych. "
@@ -69,7 +72,6 @@ void TabAssistant::handleAnalysis()
                                    "Pytanie: " + qPrompt.toStdString();
 
             string odpowiedzKoncowa = "Błąd generowania.";
-            LLMClient llm;
 
             if (uzyjGemini) {
                 odpowiedzKoncowa = llm.askGemini(promptKoncowy);

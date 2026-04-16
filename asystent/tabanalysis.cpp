@@ -84,8 +84,9 @@ void TabAnalysis::performDetailedAnalysis()
             string low = stats.lowPrice;
 
             // --- KROK 3: Prawdziwa analiza AI ---
-            QMetaObject::invokeMethod(mainWindow, [this]() {
-                ui->textWynikAnalizy->setPlainText("KROK 3: Sztuczna Inteligencja przygotowuje szczegółowy raport rynkowy...");
+            string mNameAnaliza = uzyjGemini ? ("Google (" + llm.getGeminiModelName() + ")") : ("Agent Ollama (" + llm.getLlamaModelName() + ")");
+            QMetaObject::invokeMethod(mainWindow, [this, mNameAnaliza]() {
+                ui->textWynikAnalizy->setPlainText(QString::fromStdString("KROK 3: Model " + mNameAnaliza + " przygotowuje szczegółowy raport rynkowy..."));
             });
 
             string promptAnaliza = "Wciel się w rolę profesjonalnego analityka z Wall Street. Masz dane z ostatnich 24h dla " + symbol + ":\n"

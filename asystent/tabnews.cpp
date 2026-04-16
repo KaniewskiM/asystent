@@ -57,13 +57,15 @@ void TabNews::generateNews()
                             "- [2 dni temu] **Kolejny polski tytuł...**\n"
                             "Tłumaczenie dłuższego tekstu z opisu...\n";
         
-        QMetaObject::invokeMethod(mainWindow, [this]() {
-            ui->textNewsy->setPlainText("AI pobiera pełne opisy zagranicznych artykułów i tworzy profesjonalny biuletyn...");
+        LLMClient llm;
+        string mName = uzyjGemini ? ("Google (" + llm.getGeminiModelName() + ")") : ("Agent Ollama (" + llm.getLlamaModelName() + ")");
+
+        QMetaObject::invokeMethod(mainWindow, [this, mName]() {
+            ui->textNewsy->setPlainText(QString::fromStdString("Model " + mName + " pobiera logi RSS i tłumaczy wiadomości w tle..."));
         });
         
         string newsyFinal = "Błąd generowania newsów.";
 
-        LLMClient llm;
         if (uzyjGemini) {
             newsyFinal = llm.askGemini(newsPrompt);
         } else {

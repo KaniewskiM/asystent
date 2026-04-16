@@ -27,6 +27,26 @@ LLMClient::LLMClient() {
             outKey.close();
         }
     }
+    
+    // Konfiguracja nazwy lokalnego modelu AI
+    ifstream modelFile("llama_model.txt");
+    if (modelFile.is_open()) {
+        string rawModel;
+        getline(modelFile, rawModel);
+        llamaModel = "";
+        for (char c : rawModel) {
+            if (c > 32) llamaModel += c;
+        }
+        modelFile.close();
+        if(llamaModel.empty()) llamaModel = "llama3.1"; // zabezpieczenie przed pustym plikiem
+    } else {
+        llamaModel = "llama3.1"; // domyślny na ten moment
+        ofstream outModel("llama_model.txt");
+        if (outModel.is_open()) {
+            outModel << llamaModel;
+            outModel.close();
+        }
+    }
 
     geminiModel = "gemini-flash-latest";
     llamaEndpoint = "http://127.0.0.1:11434/api/generate";
@@ -92,7 +112,7 @@ std::string LLMClient::askLlama(const std::string& prompt, double temperature, i
     string resFile = "llama_res_" + to_string(ms) + ".txt";
 
     ofstream pj(reqFile);
-    pj << "{\"model\":\"llama3.1\",\"prompt\":\"" << wyczyscJson(prompt) 
+    pj << "{\"model\":\"" << llamaModel << "\",\"prompt\":\"" << wyczyscJson(prompt) 
        << "\",\"stream\":false,\"options\":{\"temperature\":" << temperature << ", \"num_predict\": " << numPredict << "}}";
     pj.close();
 

@@ -27,10 +27,14 @@ public:
      */
     std::string askLlama(const std::string& prompt, double temperature = 0.5, int numPredict = 800);
 
+    std::string getLlamaModelName() const { return llamaModel; }
+    std::string getGeminiModelName() const { return geminiModel; }
+
 private:
     std::string apiKey;       ///< Klucz API wczytany z pliku
     std::string geminiModel;  ///< Nazwa używanego modelu Gemini
     std::string llamaEndpoint;///< Adres URL serwera Ollama
+    std::string llamaModel;   ///< Nazwa używanego modelu Ollama (np. llama3.1, llama3.2)
 };
 
 #endif // LLMCLIENT_H

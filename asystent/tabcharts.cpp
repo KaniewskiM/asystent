@@ -45,8 +45,9 @@ void TabCharts::generateChart()
 
     ui->btnGenerujWykres->setEnabled(false);
 
-    QString nazwaModelu = uzyjGemini ? "Gemini 2.5" : "Llama 3.1";
-    ui->textAnalizaWykresu->setPlainText("KROK 1: " + nazwaModelu + " rozszyfrowuje Twoje zapytanie...");
+    LLMClient llmInfo;
+    QString nazwaModelu = uzyjGemini ? ("Google (" + QString::fromStdString(llmInfo.getGeminiModelName()) + ")") : ("Agent Ollama (" + QString::fromStdString(llmInfo.getLlamaModelName()) + ")");
+    ui->textAnalizaWykresu->setPlainText("KROK 1: Model " + nazwaModelu + " rozszyfrowuje Twoje zapytanie...");
 
     (void)QtConcurrent::run([this, wpisanaWaluta, startMs, endMs, typWyk, uzyjGemini, nazwaModelu, trybMcap]() {
         try {
