@@ -1,0 +1,13 @@
+digraph "CryptoExchange::fetchLatestNews"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="CryptoExchange::fetchLatestNews",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Bezpośrednio zczytuje publiczny kanał RSS światowych informacji kryptowalutowych celem parsowania do ..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="TabNews::generateNews",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_news.html#aefbdebaf3bb40aa72c78d373e5b72b74",tooltip="Pobiera najświeższe newsy, tłumaczy je i wyświetla biuletyn."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="TabNews::TabNews",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_news.html#aa616c9adc1935c51efd6442404c1065c",tooltip="Konstruktor modułu wiadomości."];
+}

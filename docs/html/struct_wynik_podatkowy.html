@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Krypto Asystent: Dokumentacja struktury WynikPodatkowy</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Krypto Asystent<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('struct_wynik_podatkowy.html','','struct_wynik_podatkowy-members'); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Dokumentacja struktury WynikPodatkowy</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Struktura przechowująca wynik kalkulacji podatkowej.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="taxcalculator_8h_source.html">taxcalculator.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram współpracy dla WynikPodatkowy:</div>
+<div class="dyncontent">
+<div class="center"><img src="struct_wynik_podatkowy__coll__graph.png" border="0" usemap="#a_wynik_podatkowy_coll__map" loading="lazy" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Atrybuty publiczne</h2></td></tr>
+<tr class="memitem:a783f24f533d002c7b21651affc587489" id="r_a783f24f533d002c7b21651affc587489"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a783f24f533d002c7b21651affc587489">zysk</a></td></tr>
+<tr class="memdesc:a783f24f533d002c7b21651affc587489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Różnica między ceną sprzedaży a kupna (może być ujemna).  <br /></td></tr>
+<tr class="memitem:a3fb5cf1954e7184f75e46d02d4ee3bca" id="r_a3fb5cf1954e7184f75e46d02d4ee3bca"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a3fb5cf1954e7184f75e46d02d4ee3bca">podatek</a></td></tr>
+<tr class="memdesc:a3fb5cf1954e7184f75e46d02d4ee3bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Należny podatek (19% od zysku, 0 przy stracie).  <br /></td></tr>
+<tr class="memitem:a780fa08be21dbba0174f1d1942b9d6c3" id="r_a780fa08be21dbba0174f1d1942b9d6c3"><td class="memItemLeft">double&#160;</td><td class="memItemRight"><a class="el" href="#a780fa08be21dbba0174f1d1942b9d6c3">netto</a></td></tr>
+<tr class="memdesc:a780fa08be21dbba0174f1d1942b9d6c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kwota do wypłaty po odjęciu podatku.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Struktura przechowująca wynik kalkulacji podatkowej. </p>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a780fa08be21dbba0174f1d1942b9d6c3" name="a780fa08be21dbba0174f1d1942b9d6c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a780fa08be21dbba0174f1d1942b9d6c3">&#9670;&#160;</a></span>netto</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double WynikPodatkowy::netto</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kwota do wypłaty po odjęciu podatku. </p>
+
+</div>
+</div>
+<a id="a3fb5cf1954e7184f75e46d02d4ee3bca" name="a3fb5cf1954e7184f75e46d02d4ee3bca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb5cf1954e7184f75e46d02d4ee3bca">&#9670;&#160;</a></span>podatek</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double WynikPodatkowy::podatek</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Należny podatek (19% od zysku, 0 przy stracie). </p>
+
+</div>
+</div>
+<a id="a783f24f533d002c7b21651affc587489" name="a783f24f533d002c7b21651affc587489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a783f24f533d002c7b21651affc587489">&#9670;&#160;</a></span>zysk</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double WynikPodatkowy::zysk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Różnica między ceną sprzedaży a kupna (może być ujemna). </p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej struktury została wygenerowana z pliku:<ul>
+<li><a class="el" href="taxcalculator_8h_source.html">taxcalculator.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="struct_wynik_podatkowy.html">WynikPodatkowy</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

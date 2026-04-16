@@ -1,0 +1,17 @@
+digraph "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_4fef79e7177ba769987a8da36c892c5f {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="build", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_4fef79e7177ba769987a8da36c892c5f.html",tooltip=""]
+  subgraph clusterdir_7899e6d22ba24ec2e2a88791dcb93a6e {
+    graph [ bgcolor="#edf0f7", pencolor="grey25", label="", fontname=Helvetica,fontsize=10 style="filled,bold", URL="dir_7899e6d22ba24ec2e2a88791dcb93a6e.html",tooltip=""]
+    dir_7899e6d22ba24ec2e2a88791dcb93a6e [shape=plaintext, label="Desktop_Qt_6_10_2_MinGW\l_64_bit-Debugowa"];
+  dir_0cbcaa6719bb6eca461846e50d56c6dd [label="asystent_autogen", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_0cbcaa6719bb6eca461846e50d56c6dd.html",tooltip=""];
+  dir_e6ceaea63f65105f917599fb1d432406 [label="CMakeFiles", fillcolor="#a2b4d6", color="grey25", style="filled", URL="dir_e6ceaea63f65105f917599fb1d432406.html",tooltip=""];
+  }
+  }
+}

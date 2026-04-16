@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['calculatetax_0',['calculateTax',['../class_tab_taxes.html#aac996af5a08d4a4d1f788217cde2c60c',1,'TabTaxes']]],
+  ['centralwidget_1',['centralwidget',['../class_ui___main_window.html#a356f1cf3ebda15f1fac59467ee081b74',1,'Ui_MainWindow']]],
+  ['changepercent_2',['changePercent',['../struct_crypto_exchange_1_1_market_stats.html#aa9eed17fcb6f4892638191319f91fe2e',1,'CryptoExchange::MarketStats']]],
+  ['checkdoteraz_3',['checkDoTeraz',['../class_ui___main_window.html#ad2697c822ac0c1314700ea4a1a1676ce',1,'Ui_MainWindow']]],
+  ['checkkapitalizacja_4',['checkKapitalizacja',['../class_ui___main_window.html#af2c243ad884c61adebba3a549ee5d730',1,'Ui_MainWindow']]],
+  ['checkuzyjgemini_5',['checkUzyjGemini',['../class_ui___main_window.html#a6c440025046dd524d260d8cf1843283a',1,'Ui_MainWindow']]],
+  ['checkuzyjgeminianaliza_6',['checkUzyjGeminiAnaliza',['../class_ui___main_window.html#a5a20de2662aeeff5fcc4220378ab078d',1,'Ui_MainWindow']]],
+  ['checkuzyjgeminiasystent_7',['checkUzyjGeminiAsystent',['../class_ui___main_window.html#ab22607fac78d63bb3d8e50803bf74cb7',1,'Ui_MainWindow']]],
+  ['checkuzyjgeminiwykresy_8',['checkUzyjGeminiWykresy',['../class_ui___main_window.html#a037c3b312951bd27eb9ac6d700dc0487',1,'Ui_MainWindow']]],
+  ['cmakecxxcompilerid_2ecpp_9',['CMakeCXXCompilerId.cpp',['../_c_make_c_x_x_compiler_id_8cpp.html',1,'']]],
+  ['comboczasnewsow_10',['comboCzasNewsow',['../class_ui___main_window.html#a1d49049d63e45446fc1d4407937aad20',1,'Ui_MainWindow']]],
+  ['combotypwykresu_11',['comboTypWykresu',['../class_ui___main_window.html#ad29a7e632e279625b7633848dff3194e',1,'Ui_MainWindow']]],
+  ['compiler_5fid_12',['COMPILER_ID',['../_c_make_c_x_x_compiler_id_8cpp.html#a81dee0709ded976b2e0319239f72d174',1,'CMakeCXXCompilerId.cpp']]],
+  ['cryptoexchange_13',['CryptoExchange',['../class_crypto_exchange.html',1,'CryptoExchange'],['../class_crypto_exchange.html#a864f986250bdd21ce1d6ac18ab80b362',1,'CryptoExchange::CryptoExchange()']]],
+  ['cryptoexchange_2ecpp_14',['cryptoexchange.cpp',['../cryptoexchange_8cpp.html',1,'']]],
+  ['cryptoexchange_2ecpp_2eobj_2ed_15',['cryptoexchange.cpp.obj.d',['../cryptoexchange_8cpp_8obj_8d.html',1,'']]],
+  ['cryptoexchange_2eh_16',['cryptoexchange.h',['../cryptoexchange_8h.html',1,'']]],
+  ['cxx_5fstd_17',['CXX_STD',['../_c_make_c_x_x_compiler_id_8cpp.html#a34cc889e576a1ae6c84ae9e0a851ba21',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f11_18',['CXX_STD_11',['../_c_make_c_x_x_compiler_id_8cpp.html#a2c21af1889e9ca5cda36069184cc3234',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f14_19',['CXX_STD_14',['../_c_make_c_x_x_compiler_id_8cpp.html#a39fb4789a452bfb5df17d40f640dd720',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f17_20',['CXX_STD_17',['../_c_make_c_x_x_compiler_id_8cpp.html#ae17f1ae0bf56cf631eadff4f73e96ff9',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f20_21',['CXX_STD_20',['../_c_make_c_x_x_compiler_id_8cpp.html#aa52ec6104623a66734cc5d5d28733bed',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f23_22',['CXX_STD_23',['../_c_make_c_x_x_compiler_id_8cpp.html#ae5e2d955d2884c65b7de2e1ad29a4f1d',1,'CMakeCXXCompilerId.cpp']]],
+  ['cxx_5fstd_5f98_23',['CXX_STD_98',['../_c_make_c_x_x_compiler_id_8cpp.html#a2454727f55dd7af9210ab341ca8be2c8',1,'CMakeCXXCompilerId.cpp']]]
+];

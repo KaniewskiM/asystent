@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['q_5fconstinit_0',['Q_CONSTINIT',['../moc__mainwindow_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_mainwindow.cpp'],['../moc__tabanalysis_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_tabanalysis.cpp'],['../moc__tabassistant_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_tabassistant.cpp'],['../moc__tabcharts_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_tabcharts.cpp'],['../moc__tabnews_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_tabnews.cpp'],['../moc__tabtaxes_8cpp.html#ad83b2306f94b5b9e5625794fc238c8a0',1,'Q_CONSTINIT:&#160;moc_tabtaxes.cpp']]],
+  ['qt_5fcharts_5flib_1',['QT_CHARTS_LIB',['../moc__predefs_8h.html#a5eb0efb2e5a2488208f03d28381251cf',1,'moc_predefs.h']]],
+  ['qt_5fconcurrent_5flib_2',['QT_CONCURRENT_LIB',['../moc__predefs_8h.html#a6f126a6c797ed3566ed6820534e90fed',1,'moc_predefs.h']]],
+  ['qt_5fcore_5flib_3',['QT_CORE_LIB',['../moc__predefs_8h.html#a3fdaeff4a929898125f060b951479a85',1,'moc_predefs.h']]],
+  ['qt_5fgui_5flib_4',['QT_GUI_LIB',['../moc__predefs_8h.html#a20aa38ff6d76d6980b3c6365892110f1',1,'moc_predefs.h']]],
+  ['qt_5fmeta_5ftag_5fzn10mainwindowe_5ft_5',['qt_meta_tag_ZN10MainWindowE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n10_main_window_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fmeta_5ftag_5fzn11tabanalysise_5ft_6',['qt_meta_tag_ZN11TabAnalysisE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n11_tab_analysis_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fmeta_5ftag_5fzn12tabassistante_5ft_7',['qt_meta_tag_ZN12TabAssistantE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n12_tab_assistant_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fmeta_5ftag_5fzn7tabnewse_5ft_8',['qt_meta_tag_ZN7TabNewsE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n7_tab_news_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fmeta_5ftag_5fzn8tabtaxese_5ft_9',['qt_meta_tag_ZN8TabTaxesE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n8_tab_taxes_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fmeta_5ftag_5fzn9tabchartse_5ft_10',['qt_meta_tag_ZN9TabChartsE_t',['../struct_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d_1_1qt__meta__tag___z_n9_tab_charts_e__t.html',1,'QT_WARNING_DISABLE_DEPRECATED']]],
+  ['qt_5fneeds_5fqmain_11',['QT_NEEDS_QMAIN',['../moc__predefs_8h.html#a365888b1647dc21d109d7a620ae09824',1,'moc_predefs.h']]],
+  ['qt_5fnetwork_5flib_12',['QT_NETWORK_LIB',['../moc__predefs_8h.html#a0c8f0b7533caf90e516da5250dd5305c',1,'moc_predefs.h']]],
+  ['qt_5fopengl_5flib_13',['QT_OPENGL_LIB',['../moc__predefs_8h.html#accf05027d126386b7d64d7f4ca38911d',1,'moc_predefs.h']]],
+  ['qt_5fopenglwidgets_5flib_14',['QT_OPENGLWIDGETS_LIB',['../moc__predefs_8h.html#acd3d4144cd2382aadcddb6b1f6c99612',1,'moc_predefs.h']]],
+  ['qt_5fqml_5fdebug_15',['QT_QML_DEBUG',['../moc__predefs_8h.html#aa37e0aae9ada0101e90a286d53a33ffd',1,'moc_predefs.h']]],
+  ['qt_5fwarning_5fdisable_5fdeprecated_16',['QT_WARNING_DISABLE_DEPRECATED',['../namespace_q_t___w_a_r_n_i_n_g___d_i_s_a_b_l_e___d_e_p_r_e_c_a_t_e_d.html',1,'']]],
+  ['qt_5fwidgets_5flib_17',['QT_WIDGETS_LIB',['../moc__predefs_8h.html#a3764f041b8bf4c5ebd0bf19c071f416c',1,'moc_predefs.h']]],
+  ['quotevolume_18',['quoteVolume',['../struct_crypto_exchange_1_1_market_stats.html#a5ddb3b0300c38a44c8f60a5580a8f696',1,'CryptoExchange::MarketStats']]]
+];

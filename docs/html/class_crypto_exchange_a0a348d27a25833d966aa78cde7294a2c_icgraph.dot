@@ -1,0 +1,15 @@
+digraph "CryptoExchange::extractJsonValue"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="CryptoExchange::extractJson\lValue",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Pobiera surowe dane techniczne giełdy (Świece Heikin Ashi/OHLC) dla celów rysowania i eksportuje je d..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="CryptoExchange::fetchMarket\lData24h",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_crypto_exchange.html#a9e0bcf315c935544edb5b89a1a70b184",tooltip="Pobiera pełne statystyki rynkowe z ostatnich 24h dla wybranej kryptowaluty."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="TabAnalysis::performDetailed\lAnalysis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_analysis.html#a5260f8d485ce6e582d4f54253b30d2a5",tooltip="Wykonuje wieloetapową analizę rynkową przy użyciu AI."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="TabAnalysis::TabAnalysis",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_analysis.html#ae55edd0943e08d42f7275010ecf52228",tooltip="Konstruktor modułu analizy."];
+}

@@ -1,0 +1,18 @@
+digraph "TabCharts::generateChart"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="TabCharts::generateChart",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Pobiera dane i uruchamia zewnętrzny skrypt Python do generowania HTML z wykresem."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="LLMClient::askGemini",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_l_l_m_client.html#ae8b26739aabcbb2a12085746b4a864cb",tooltip="Wysyła zapytanie do modelu Gemini (Google)."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="wyczyscJson",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$utils_8cpp.html#a04bb75bb8e449af6e1db8275cd093e65",tooltip="Czyści tekst z technicznych sekwencji ucieczki JSON."];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="LLMClient::askLlama",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_l_l_m_client.html#a8a4c288e5cc92cc71d42d1ccd90a3030",tooltip="Wysyła zapytanie do lokalnego modelu Llama (via Ollama)."];
+  Node4 -> Node3 [id="edge4_Node000004_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node5 [id="edge5_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="CryptoExchange::fetchSupply",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_crypto_exchange.html#a28156403fac0aecf9374b5d6c805e0a2",tooltip="Pobiera historyczną bądź całkowitą wielkość podaży monet w obiegu korzystając z darmowego API CoinGec..."];
+}

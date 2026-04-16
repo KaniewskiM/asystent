@@ -1,0 +1,13 @@
+digraph "TaxCalculator::oblicz"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="TaxCalculator::oblicz",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Oblicza wynik finansowy transakcji."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="TabTaxes::calculateTax",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_taxes.html#aac996af5a08d4a4d1f788217cde2c60c",tooltip="Pobiera dane z UI i oblicza podatek korzystając z klasy TaxCalculator."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="TabTaxes::TabTaxes",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_tab_taxes.html#ae41b0f406b0257ab39af080a47300f23",tooltip="Konstruktor modułu podatkowego."];
+}

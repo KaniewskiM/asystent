@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.16.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Krypto Asystent: Plik źródłowy taxcalculator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Krypto Asystent<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano za pomocą Doxygen 1.16.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('taxcalculator_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">taxcalculator.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="taxcalculator_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef TAXCALCULATOR_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define TAXCALCULATOR_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="struct_wynik_podatkowy.html">   12</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_wynik_podatkowy.html">WynikPodatkowy</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="struct_wynik_podatkowy.html#a783f24f533d002c7b21651affc587489">   13</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_wynik_podatkowy.html#a783f24f533d002c7b21651affc587489">zysk</a>;    </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="struct_wynik_podatkowy.html#a3fb5cf1954e7184f75e46d02d4ee3bca">   14</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_wynik_podatkowy.html#a3fb5cf1954e7184f75e46d02d4ee3bca">podatek</a>; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="struct_wynik_podatkowy.html#a780fa08be21dbba0174f1d1942b9d6c3">   15</a></span>    <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_wynik_podatkowy.html#a780fa08be21dbba0174f1d1942b9d6c3">netto</a>;   </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_tax_calculator.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="class_tax_calculator.html">TaxCalculator</a> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_struct" href="struct_wynik_podatkowy.html">WynikPodatkowy</a> <a class="code hl_function" href="class_tax_calculator.html#a0529ec9eb49ad56905fa4245d82a4604">oblicz</a>(<span class="keywordtype">double</span> kwotaKupna, <span class="keywordtype">double</span> kwotaSprzedazy) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">double</span> <a class="code hl_function" href="class_tax_calculator.html#a5b8cd273a8c72319354d84918b08babd">stawkaPodatku</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_tax_calculator.html#aadad9cd3d3be4adca4a24eb71df3b974">   42</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">double</span> <a class="code hl_variable" href="class_tax_calculator.html#aadad9cd3d3be4adca4a24eb71df3b974">STAWKA</a> = 0.19; </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#endif </span><span class="comment">// TAXCALCULATOR_H</span></div>
+<div class="ttc" id="aclass_tax_calculator_html"><div class="ttname"><a href="class_tax_calculator.html">TaxCalculator</a></div><div class="ttdoc">Klasa odpowiedzialna za obliczanie podatku od zysków z kryptowalut.</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:24</div></div>
+<div class="ttc" id="aclass_tax_calculator_html_a0529ec9eb49ad56905fa4245d82a4604"><div class="ttname"><a href="class_tax_calculator.html#a0529ec9eb49ad56905fa4245d82a4604">TaxCalculator::oblicz</a></div><div class="ttdeci">WynikPodatkowy oblicz(double kwotaKupna, double kwotaSprzedazy) const</div><div class="ttdoc">Oblicza wynik finansowy transakcji.</div><div class="ttdef"><b>Definicja</b> taxcalculator.cpp:3</div></div>
+<div class="ttc" id="aclass_tax_calculator_html_a5b8cd273a8c72319354d84918b08babd"><div class="ttname"><a href="class_tax_calculator.html#a5b8cd273a8c72319354d84918b08babd">TaxCalculator::stawkaPodatku</a></div><div class="ttdeci">double stawkaPodatku() const</div><div class="ttdoc">Zwraca stawkę podatkową stosowaną przy kalkulacjach.</div><div class="ttdef"><b>Definicja</b> taxcalculator.cpp:11</div></div>
+<div class="ttc" id="aclass_tax_calculator_html_aadad9cd3d3be4adca4a24eb71df3b974"><div class="ttname"><a href="class_tax_calculator.html#aadad9cd3d3be4adca4a24eb71df3b974">TaxCalculator::STAWKA</a></div><div class="ttdeci">static constexpr double STAWKA</div><div class="ttdoc">Polska stawka podatku od zysków kapitałowych.</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:42</div></div>
+<div class="ttc" id="astruct_wynik_podatkowy_html"><div class="ttname"><a href="struct_wynik_podatkowy.html">WynikPodatkowy</a></div><div class="ttdoc">Struktura przechowująca wynik kalkulacji podatkowej.</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:12</div></div>
+<div class="ttc" id="astruct_wynik_podatkowy_html_a3fb5cf1954e7184f75e46d02d4ee3bca"><div class="ttname"><a href="struct_wynik_podatkowy.html#a3fb5cf1954e7184f75e46d02d4ee3bca">WynikPodatkowy::podatek</a></div><div class="ttdeci">double podatek</div><div class="ttdoc">Należny podatek (19% od zysku, 0 przy stracie).</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:14</div></div>
+<div class="ttc" id="astruct_wynik_podatkowy_html_a780fa08be21dbba0174f1d1942b9d6c3"><div class="ttname"><a href="struct_wynik_podatkowy.html#a780fa08be21dbba0174f1d1942b9d6c3">WynikPodatkowy::netto</a></div><div class="ttdeci">double netto</div><div class="ttdoc">Kwota do wypłaty po odjęciu podatku.</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:15</div></div>
+<div class="ttc" id="astruct_wynik_podatkowy_html_a783f24f533d002c7b21651affc587489"><div class="ttname"><a href="struct_wynik_podatkowy.html#a783f24f533d002c7b21651affc587489">WynikPodatkowy::zysk</a></div><div class="ttdeci">double zysk</div><div class="ttdoc">Różnica między ceną sprzedaży a kupna (może być ujemna).</div><div class="ttdef"><b>Definicja</b> taxcalculator.h:13</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="taxcalculator_8h.html">taxcalculator.h</a></li>
+    <li class="footer">Wygenerowano za pomocą <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.16.1 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+var files_dup =
+[
+    [ "build", "dir_4fef79e7177ba769987a8da36c892c5f.html", "dir_4fef79e7177ba769987a8da36c892c5f" ],
+    [ "generate_chart.py", "generate__chart_8py.html", "generate__chart_8py" ],
+    [ "cryptoexchange.cpp", "cryptoexchange_8cpp.html", null ],
+    [ "cryptoexchange.h", "cryptoexchange_8h.html", "cryptoexchange_8h" ],
+    [ "llmclient.cpp", "llmclient_8cpp.html", null ],
+    [ "llmclient.h", "llmclient_8h.html", "llmclient_8h" ],
+    [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
+    [ "mainwindow.cpp", "mainwindow_8cpp.html", null ],
+    [ "mainwindow.h", "mainwindow_8h.html", "mainwindow_8h" ],
+    [ "tabanalysis.cpp", "tabanalysis_8cpp.html", null ],
+    [ "tabanalysis.h", "tabanalysis_8h.html", "tabanalysis_8h" ],
+    [ "tabassistant.cpp", "tabassistant_8cpp.html", null ],
+    [ "tabassistant.h", "tabassistant_8h.html", "tabassistant_8h" ],
+    [ "tabcharts.cpp", "tabcharts_8cpp.html", null ],
+    [ "tabcharts.h", "tabcharts_8h.html", "tabcharts_8h" ],
+    [ "tabnews.cpp", "tabnews_8cpp.html", null ],
+    [ "tabnews.h", "tabnews_8h.html", "tabnews_8h" ],
+    [ "tabtaxes.cpp", "tabtaxes_8cpp.html", null ],
+    [ "tabtaxes.h", "tabtaxes_8h.html", "tabtaxes_8h" ],
+    [ "taxcalculator.cpp", "taxcalculator_8cpp.html", null ],
+    [ "taxcalculator.h", "taxcalculator_8h.html", "taxcalculator_8h" ],
+    [ "utils.cpp", "utils_8cpp.html", "utils_8cpp" ],
+    [ "utils.h", "utils_8h.html", "utils_8h" ]
+];

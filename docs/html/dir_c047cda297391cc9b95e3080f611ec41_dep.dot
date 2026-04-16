@@ -1,0 +1,12 @@
+digraph "build/Desktop_Qt_6_10_2_MinGW_64_bit-Debugowa/CMakeFiles/3.30.5/CompilerIdCXX"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  compound=true
+  subgraph clusterdir_f0afeaabfbcab89352b2e53fe6000274 {
+    graph [ bgcolor="#edf0f7", pencolor="grey50", label="3.30.5", fontname=Helvetica,fontsize=10 style="filled,dashed", URL="dir_f0afeaabfbcab89352b2e53fe6000274.html",tooltip=""]
+  dir_c047cda297391cc9b95e3080f611ec41 [label="CompilerIdCXX", fillcolor="#edf0f7", color="grey25", style="filled,bold", URL="dir_c047cda297391cc9b95e3080f611ec41.html",tooltip=""];
+  }
+}
