@@ -57,6 +57,7 @@ set(TEST_SOURCES
     test_main.cpp
     taxcalculator.cpp
     utils.cpp
+    cryptoexchange.cpp
 )
 
 qt_add_executable(asystent_tests ${TEST_SOURCES})
