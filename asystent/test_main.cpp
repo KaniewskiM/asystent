@@ -65,7 +65,7 @@ private slots:
         QCOMPARE(QString::fromStdString(fakePrice), QString("BLAD"));
     }
 
-    void testCryptoExchange_NiepoprawnySymbolPodaży() {
+    void testCryptoExchange_NiepoprawnySymbolPodazy() {
         // Sprawdzenie czy inteligentny Fallback w fetchSupply broni nas przed wyciekiem pamięci
         CryptoExchange exchange;
         double fakeSupply = exchange.fetchSupply("JAKAS_LOSOWA_WIEZA");
