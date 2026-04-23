@@ -1,3 +1,10 @@
+/**
+ * @file cryptoexchange.cpp
+ * @brief Implementacja silnika wymiany danych z giełdami i API zewnętrznymi.
+ * 
+ * Klasa odpowiada za pobieranie cen, wskaźników 24h, danych historycznych (świec),
+ * podaży monet oraz aktualności rynkowych przy użyciu narzędzia curl.
+ */
 #include "cryptoexchange.h"
 #include <cstdlib>
 #include <fstream>
@@ -6,13 +13,20 @@
 CryptoExchange::CryptoExchange() {
 }
 
+/**
+ * @brief Pobiera aktualną cenę wybranego symbolu.
+ * @param symbol Kod pary (np. BTCUSDT).
+ * @return Cena jako string lub "BLAD" w przypadku niepowodzenia.
+ */
 std::string CryptoExchange::fetchCurrentPrice(const std::string& symbol) {
     using namespace std;
     string cenaPobrana = "BLAD";
     
+    // Generowanie unikalnej nazwy pliku tymczasowego na podstawie czasu
     auto ms = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
     string file = "price_" + to_string(ms) + ".txt";
 
+    // PRÓBA 1: Binance API
     string cmdB = "curl -s \"https://api.binance.com/api/v3/ticker/price?symbol=" + symbol + "\" > " + file;
     system(cmdB.c_str());
     
@@ -25,6 +39,7 @@ std::string CryptoExchange::fetchCurrentPrice(const std::string& symbol) {
         }
     }
 
+    // PRÓBA 2: MEXC API (Fallback, jeśli Binance zawiedzie)
     if (cenaPobrana == "BLAD") {
         string cmdM = "curl -s \"https://api.mexc.com/api/v3/ticker/price?symbol=" + symbol + "\" > " + file;
         system(cmdM.c_str());
@@ -38,15 +53,19 @@ std::string CryptoExchange::fetchCurrentPrice(const std::string& symbol) {
         }
     }
     
+    // Formatowanie ceny: usuwanie zbędnych zer na końcu dla lepszej czytelności
     if (cenaPobrana != "BLAD" && symbol != "BTCPLN" && symbol != "BTCUSDT") { 
         while(cenaPobrana.back() == '0') cenaPobrana.pop_back(); 
         if(cenaPobrana.back() == '.') cenaPobrana.pop_back();
     }
     
-    std::remove(file.c_str());
+    std::remove(file.c_str()); // Sprzątanie pliku tymczasowego
     return cenaPobrana;
 }
 
+/**
+ * @brief Pomocnicza metoda do wyciągania wartości tekstowej z surowego formatu JSON.
+ */
 std::string CryptoExchange::extractJsonValue(const std::string& json, const std::string& key) {
     using namespace std;
     size_t pos = json.find("\"" + key + "\"");
@@ -64,6 +83,9 @@ std::string CryptoExchange::extractJsonValue(const std::string& json, const std:
     return string("0");
 }
 
+/**
+ * @brief Pobiera statystyki rynkowe z ostatnich 24h (wolumen, zmiana %, max/min).
+ */
 CryptoExchange::MarketStats CryptoExchange::fetchMarketData24h(const std::string& symbol) {
     using namespace std;
     MarketStats stats = {"0", "0", "0", "0", "0", false};
@@ -71,11 +93,13 @@ CryptoExchange::MarketStats CryptoExchange::fetchMarketData24h(const std::string
     auto ms = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
     string file = "ind_" + to_string(ms) + ".txt";
 
+    // Pobieranie danych z Binance
     system(("curl -s \"https://api.binance.com/api/v3/ticker/24hr?symbol=" + symbol + "\" > " + file).c_str());
     ifstream f1(file);
     string c1((istreambuf_iterator<char>(f1)), istreambuf_iterator<char>());
     f1.close();
 
+    // Fallback na MEXC w przypadku błędu (np. symbolu brak na Binance)
     if (c1.length() < 20 || c1.find("code") != string::npos) {
         system(("curl -s \"https://api.mexc.com/api/v3/ticker/24hr?symbol=" + symbol + "\" > " + file).c_str());
         ifstream f2(file);
@@ -83,6 +107,7 @@ CryptoExchange::MarketStats CryptoExchange::fetchMarketData24h(const std::string
         f2.close();
     }
 
+    // Jeśli dane są poprawne, parsujemy kluczowe pola
     if (c1.length() >= 20 && c1.find("code") == string::npos) {
         stats.success = true;
         stats.price = extractJsonValue(c1, "lastPrice");
@@ -96,9 +121,13 @@ CryptoExchange::MarketStats CryptoExchange::fetchMarketData24h(const std::string
     return stats;
 }
 
+/**
+ * @brief Pobiera dane o świecach (historyczne ceny) i zapisuje je do pliku dla skryptu Python.
+ */
 bool CryptoExchange::fetchCandles(const std::string& symbol, const std::string& interval, long long startMs, long long endMs, const std::string& outputFile) {
     using namespace std;
     
+    // Próba pobrania świec z Binance
     string cmdBinance = "curl -s \"https://api.binance.com/api/v3/klines?symbol=" + symbol + "&interval=" + interval + "&startTime=" + to_string(startMs) + "&endTime=" + to_string(endMs) + "\" > " + outputFile;
     system(cmdBinance.c_str());
 
@@ -110,6 +139,7 @@ bool CryptoExchange::fetchCandles(const std::string& symbol, const std::string& 
         return true;
     }
 
+    // Próba pobrania świec z MEXC
     string cmdMexc = "curl -s \"https://api.mexc.com/api/v3/klines?symbol=" + symbol + "&interval=" + interval + "&startTime=" + to_string(startMs) + "&endTime=" + to_string(endMs) + "\" > " + outputFile;
     system(cmdMexc.c_str());
     
@@ -124,9 +154,13 @@ bool CryptoExchange::fetchCandles(const std::string& symbol, const std::string& 
     return false;
 }
 
+/**
+ * @brief Pobiera aktualną podaż monety z API CoinGecko (potrzebne do kapitalizacji).
+ */
 double CryptoExchange::fetchSupply(const std::string& symbol) {
     using namespace std;
     
+    // Normalizacja symbolu (usunięcie końcówek USDT/PLN i zamiana na małe litery dla CoinGecko)
     string baseSymbol = symbol;
     if (baseSymbol.length() > 4 && baseSymbol.substr(baseSymbol.length() - 4) == "USDT") {
         baseSymbol = baseSymbol.substr(0, baseSymbol.length() - 4);
@@ -138,6 +172,7 @@ double CryptoExchange::fetchSupply(const std::string& symbol) {
     auto ms = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
     string file = "supply_" + to_string(ms) + ".txt";
 
+    // Zapytanie do CoinGecko o rynkową podaż obiegu
     string cmd = "curl -s \"https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&symbols=" + baseSymbol + "\" > " + file;
     system(cmd.c_str());
 
@@ -163,12 +198,16 @@ double CryptoExchange::fetchSupply(const std::string& symbol) {
     return parsedSupply;
 }
 
+/**
+ * @brief Pobiera biuletyn aktualności (RSS) z portalu CoinTelegraph i parsuje go do czystego tekstu.
+ */
 std::string CryptoExchange::fetchLatestNews() {
     using namespace std;
     
     auto ms = chrono::duration_cast<chrono::milliseconds>(chrono::system_clock::now().time_since_epoch()).count();
     string file = "newsrss_" + to_string(ms) + ".txt";
 
+    // Pobranie surowego pliku XML (RSS feed)
     string cmd = "curl -s \"https://cointelegraph.com/rss\" > " + file;
     system(cmd.c_str());
 
@@ -178,22 +217,25 @@ std::string CryptoExchange::fetchLatestNews() {
         string s((istreambuf_iterator<char>(f)), istreambuf_iterator<char>());
         f.close();
         
-        // Wyłuskiwanie pełnych klocków aktualności z datami:
+        // Parsowanie bloków <item> z RSS
         size_t pos = 0;
         int count = 0;
-        while ((pos = s.find("<item>", pos)) != string::npos && count < 30) { // Pobieramy aż 30 żeby starczyło na "7 dni wstecz"
+        while ((pos = s.find("<item>", pos)) != string::npos && count < 30) {
             size_t itemEnd = s.find("</item>", pos);
             if (itemEnd == string::npos) break;
 
+            // Wyciąganie Tytułu
             size_t titleStart = s.find("<title>", pos);
             size_t titleEnd = s.find("</title>", titleStart);
+            // Wyciąganie Daty Publikacji
             size_t pubStart = s.find("<pubDate>", pos);
             size_t pubEnd = s.find("</pubDate>", pubStart);
+            // Wyciąganie Opisu (Skrótu artykułu)
             size_t descStart = s.find("<description>", pos);
             size_t descEnd = s.find("</description>", descStart);
             
             if (titleStart != string::npos && titleEnd != string::npos && titleStart < itemEnd) {
-                // Składanie tytułu z wywalaniem śmieci z XML:
+                // Czyszczenie Tytułu (obsługa CDATA)
                 string rawTitle = s.substr(titleStart + 7, titleEnd - titleStart - 7);
                 size_t cdataStart = rawTitle.find("<![CDATA[");
                 if (cdataStart != string::npos) {
@@ -203,13 +245,11 @@ std::string CryptoExchange::fetchLatestNews() {
                     }
                 }
                 
-                // Data:
                 string pd = "Brak daty";
                 if (pubStart != string::npos && pubEnd != string::npos && pubStart < itemEnd) {
                     pd = s.substr(pubStart + 9, pubEnd - pubStart - 9);
                 }
                 
-                // Opis artykułu:
                 string desc = "";
                 if (descStart != string::npos && descEnd != string::npos && descStart < itemEnd) {
                     desc = s.substr(descStart + 13, descEnd - descStart - 13);
@@ -218,7 +258,8 @@ std::string CryptoExchange::fetchLatestNews() {
                         size_t cdataE = desc.find("]]>");
                         if (cdataE != string::npos) desc = desc.substr(cdataS + 9, cdataE - cdataS - 9);
                     }
-                    // Wyczyszczenie kodu HTML z opisu (zdjęcia, linki, paragrafy)
+                    
+                    // RĘCZNY AUTOMAT DO USUWANIA TAGÓW HTML (Wyciskanie czystego tekstu dla AI)
                     string cleanDesc = "";
                     bool inHtml = false;
                     for (char c : desc) {
@@ -229,6 +270,7 @@ std::string CryptoExchange::fetchLatestNews() {
                     desc = cleanDesc;
                 }
                 
+                // Formowanie gotowej paczki tekstowej dla AI
                 titles += "- [" + pd + "] Tytuł: " + rawTitle + "\n  Opis: " + desc + "\n\n";
                 count++;
             }

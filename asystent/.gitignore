@@ -12,6 +12,7 @@ obj/
 *.user
 .qtcreator/
 CMakeLists.txt.user
+.vscode/
 
 # Project secrets (VERY IMPORTANT)
 api_key.txt

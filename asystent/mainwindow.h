@@ -40,6 +40,10 @@ private:
     TabCharts *tabCharts;       ///< Moduł wykresów i analizy trendów
     TabTaxes *tabTaxes;         ///< Moduł kalkulatora podatkowego
     TabAnalysis *tabAnalysis;   ///< Moduł zaawansowanej analizy technicznej
+
+private slots:
+    void odswiezModeleOllama();
+    void zapiszUstawieniaAI();
 };
 
 #endif // MAINWINDOW_H

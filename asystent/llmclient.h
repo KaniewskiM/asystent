@@ -29,6 +29,7 @@ public:
 
     std::string getLlamaModelName() const { return llamaModel; }
     std::string getGeminiModelName() const { return geminiModel; }
+    std::string getApiKey() const { return apiKey; }
 
 private:
     std::string apiKey;       ///< Klucz API wczytany z pliku
