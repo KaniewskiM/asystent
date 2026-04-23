@@ -64,7 +64,7 @@ std::string LLMClient::askGemini(const std::string& prompt) {
     string resFile = "gemini_res_" + to_string(ms) + ".txt";
 
     ofstream pj(reqFile);
-    pj << "{\"contents\":[{\"parts\":[{\"text\":\"" << wyczyscJson(prompt) << "\"}]}]}";
+    pj << "{\"contents\":[{\"parts\":[{\"text\":\"" << zabezpieczJson(prompt) << "\"}]}]}";
     pj.close();
 
     string url = "https://generativelanguage.googleapis.com/v1beta/models/" + geminiModel + ":generateContent?key=" + apiKey;
@@ -112,7 +112,7 @@ std::string LLMClient::askLlama(const std::string& prompt, double temperature, i
     string resFile = "llama_res_" + to_string(ms) + ".txt";
 
     ofstream pj(reqFile);
-    pj << "{\"model\":\"" << llamaModel << "\",\"prompt\":\"" << wyczyscJson(prompt) 
+    pj << "{\"model\":\"" << llamaModel << "\",\"prompt\":\"" << zabezpieczJson(prompt) 
        << "\",\"stream\":false,\"options\":{\"temperature\":" << temperature << ", \"num_predict\": " << numPredict << "}}";
     pj.close();
 

@@ -19,4 +19,15 @@
  */
 std::string wyczyscJson(std::string tekst);
 
+/**
+ * @brief Zabezpiecza tekst do wstawienia do zapytania JSON.
+ *
+ * Zamienia znaki takie jak nowa linia czy cudzysłów
+ * na ich bezpieczne odpowiedniki (\\n, \\"), aby zapytanie JSON było poprawne składniowo.
+ *
+ * @param tekst Tekst wejściowy (np. prompt)
+ * @return Bezpieczny tekst JSON
+ */
+std::string zabezpieczJson(std::string tekst);
+
 #endif // UTILS_H
